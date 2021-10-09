@@ -1,0 +1,158 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 0;
+}
+body{
+    background-color: #fff;
+    position: relative;
+}
+.circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #81B725;
+}
+#one{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+}
+#two{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    bottom: -50px;
+}
+#three{
+    background-color: brown;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.blur{
+    border-radius: 50px;
+    filter: blur(10px);
+    -webkit-filter:blur(10px);
+    -moz-filter:blur(30px);
+    -ms-filter: blur(10px);
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+}
+.img{
+    width: 58vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+.signInPart{
+    width: 42vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signInBoxContainer{
+    width: 470px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 80px 45px 80px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background-color: #fff;
+}
+.signInBox{
+    width: 310px;
+    height: 450px;
+    position: relative;
+    padding: 0;
+}
+#title{
+    font-size: 30px;
+    padding-left: 0px;
+    margin: 20px 0px;
+    display: flex;
+    text-align: left;
+    color: #2D4863;
+}
+.signInDetailsContainer{
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+}
+.signInDetails{
+    margin: 30px 0px;
+}
+input{
+    width: 310px;
+    height: 40px;
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 14px;
+}
+input:required{
+    border-radius: 20px;
+    border-color: #2D4863;
+}
+::placeholder{
+    color: #2D4863;
+    opacity: 25%;
+    padding: 5px;
+    font-size: 14px;
+}
+.inputName{
+    background: #E5E5E5;
+    border-radius: 20px;
+}
+#signInButton{
+    width: 310px;
+    height: 55px;
+    background-color: #2D4863;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+}
+#signInButton:hover{
+    background-color: #333;
+}
+.goSignUp{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+}
+#horizonBar{
+    border: none;
+    border-bottom: 2px solid; 
+    color: #2D4863;
+    opacity: 70%;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 310px;
+    padding: 0px;
+}
+#dontHaveAcc{
+    color: #2D4863;
+    text-decoration-line: underline;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+}
+#dontHaveAcc:hover{
+    color: #333;
+}

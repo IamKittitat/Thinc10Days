@@ -1,0 +1,143 @@
+@font-face{
+    font-family: 'Poppinsregular';
+    src:url('font/Poppins-Regular.ttf')
+}
+@font-face{
+    font-family: 'PoppinsMedium';
+    src:url('font/Poppins-Medium.ttf')
+}
+@font-face{
+    font-family: 'PoppinsSemiBold';
+    src:url('font/Poppins-SemiBold.ttf')
+}
+
+
+*{
+    font-family: 'Poppinsregular';
+    font-size: 18px;
+    box-sizing: border-box;
+    
+}
+
+
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: repeating-linear-gradient(45deg,#E2410A, #FFCE63,#81B725,#FFCE63,#E2410A);
+}
+
+
+#title{
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.fillInContainer{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1100px;
+    height:100vh;
+    background-color:white;
+
+
+}
+
+
+
+.column2{
+    flex-direction: column ;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center; 
+    gap: 16.5px;
+    align-items: center;
+
+}
+.fillIn{
+    margin-top: 70px;
+}
+
+
+.timePeriodContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: baseline;
+}
+
+
+
+img {
+    vertical-align: middle;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+
+input{
+
+    border: none;
+    background-color:#E5E5E5;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor:text;
+    border-radius: 20px;
+    position:relative; 
+    margin-top: 5px; 
+    font-size: 12px;
+}
+input[type=address]{
+    background-image: url("/picture/Location\ marker.svg");
+    background-position: 10px ;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+
+.btn{
+    margin-top: 60px;
+    box-sizing: border-box  ; 
+    width: 180px;
+    height: 55px;
+    border: none;
+    color:#FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 70px 18px;
+    cursor: pointer;
+    border-radius: 20px;  
+    
+      
+}
+.btn:hover{
+    background-color:#333333;
+}
+
+.cancel{
+    background-color:#C0390A;
+    margin-left: 0;
+}
+
+.done{
+    background-color:#2D4863;
+    margin-right: 0;
+}
+
+

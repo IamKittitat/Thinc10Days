@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>availabl</title>
+   <link rel="stylesheet" type="text/css" href = "{{ url_for('static', filename = 'login/style.css')}}">
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="bg">
+   <div class="img"></div>
+      <div class="signInPart">
+         <div class="signInBoxContainer">
+            <div class="signInBox">
+               <div id="title">start a new plan. 🎉</div>
+               <form id="form" action="#" method="POST">
+                  <div class="signInDetailsContainer">
+                     <div class="userName">
+                        <span class="signIndetails">username</span><br/>
+                        <input id="inputUserName" type="text" placeholder="enter your username" required>
+                     </div>
+                     <div class="password">
+                        <span class="signIndetails">password</span><br/>
+                        <input id="inputPassword" type="password" placeholder="enter your password" required>
+                     </div>
+                  </div>
+                  <button type="submit" id="signInButton">sign in</button>
+               </form>
+               <div class="goSignUp">
+                  <div id="horizonBar"></div>
+                  <a id="dontHaveAcc" href="signUp.html">don't have an account yet?</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<script src="{{ url_for('static', filename = 'app.signIn.js')}}"></script>
+</body>
+</html>

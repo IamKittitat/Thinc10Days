@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie</title>
+
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static', filename = 'bookie/style.css')}}">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+
+    
+
+</head>
+
+<body>
+    <div class="layOut">
+        <div class="fillInContainer" >
+            <div class="fillInBox">
+                <div id="title" style="font-family: PoppinsMedium; font-size: 34px;">start your plan now!</div>
+                <div class="row">
+                    <div class="column1">
+                        <img src="{{ url_for ('static', filename = 'bookie/picture/Ellipse 4.png')}}" style="width: 70px; height: 70px;" alt="username's picture" value>
+                    </div>
+                    <div class="line">                        
+                        <img src="{{ url_for ('static', filename = 'bookie/picture/Line.png')}}" style="color:black;  width:1px; height:56px" alt="line">
+                    </div>
+                    <div class="column2">
+                        <a style="font-size: 24px;">username</a><br> <!--ชื่อusername-->
+                        <a style="color: #969696;">Party leader</a>
+                    </div>
+                </div>
+
+                <form id="form" action="#" method="GET">
+                    <div class="fillIn"  >
+                        <div class="planName">
+                            <span class="fillIndetails">Plan's name</span><br/>
+                            <input id="inputPlanName" type="text" style="width:400px; height:40px;" ><br>
+                        </div>
+
+                        <div class="detail">
+                            <span class="fillIndetails">Detail</span><br/>
+                            <input id= "inputDetail" type="text"style="width:400px; height:60px; "><br>
+                        </div>
+                            
+                        <div class="timePeriod">
+                            <span class="fillInTime">Time period</span><br/>
+                            <div class="timePeriodContainer">
+                                <div class="firstTimePeriod">
+                                    <input id="inputfistTimePeriod" type="date" style="width:180px; height:40px;" >
+                                </div>
+                                <a class="Arrow">
+                                    <img src="{{ url_for ('static', filename = 'bookie/picture/Arrow right.svg')}}" style="width: 35px; height:24px">
+                                </a>
+                                <div class="lastTimePeriod">
+                                    <input id="inputLastTimePeriod" type="date" style="width:180px; height:40px;"><br>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="location">
+                            <span class="fillInLocation">Location</span><br/>
+                            <input id="inputLocatin" type="address" style="width:400px; height:40px;" ><br>
+                        </div>
+
+
+                        <div class="participants">
+                            <span class="fillInParticipants">participants</span><br/>
+                            <input id="inputParticipants" type="text"style="width:400px; height:60px;" value><br> <!--เลือกusernameคนอื่น-->
+                        </div>
+                    </div>    
+
+                    <div class="button">
+                        <button class="btn cancel" style="font-family: PoppinsSemiBold; font-size: 18px;" input type="submit" value="Submit">cancel</button>
+                        <button class="btn done" style="font-family: PoppinsSemiBold; font-size: 18px;" input type="submit" value="Submit">done</button>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
